@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Meu Quiz</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Quiz Interativo</h1>
+        <h3>Harry Potter</h3>
+        <input type="text" name="username" autocomplete="off" placeholder="username" title="apenas letras, minimo de 6 caracteres" required>
+    </header>
+
+    <main class=".bg-dark" id="game">
+        <form>
+            <div class="questions">
+                <p> - Em Harry Potter e a Pedra filosofal, Harry, Ron e Hermione achavam que Severus Snape queria roubar a Padra filosofal, mas na verdade quem queria roubar a Pedra Filosofal era:</p>
+                <label for="">Answers:</label><br>
+                <br>A<input type="radio" name="question1" value="A"> Quirino Quirrel
+                <br>B<input type="radio" name="question1" value="B"> Sirius Black       
+            </div>
+            <div class="questions">
+                <p> - Em Harry Potter e a Câmara Secreta como Harry conseguiu sair da casa dos Dursley depois deles o trancarem no quarto e não deixarem ele retornar a Hogwarts?</p>
+                <label for="">Answers:</label><br>
+                <br>A<input type="radio" name="question2" value="A"> Harry não conseguiu sair.
+                <br>B<input type="radio" name="question2" value="B"> Usando o carro voador dos Weasley.       
+            </div>
+            <div class="questions">
+                <p> - Em Harry Potter e o Prisioneiro de Azkaban, Harry conhece Sirius Black que é seu:
+                </p>
+                <label for="">Answers:</label><br>
+                <br>A<input type="radio" name="question3" value="A"> Tio
+                <br>B<input type="radio" name="question3" value="B"> Padrinho       
+            </div>
+            <div class="questions">
+                <p> - Em Harry Potter e o Cálice de Fogo, Harry foi misteriosamente selecionado para participar do torneio tribruxo, quem colocou seu nome no cálice e por que?</p>
+                <label for="">Answers:</label><br>
+                <br>A<input type="radio" name="question4" value="A"> Alastor Moody, para levar Harry para Lord Voldemort.
+                <br>B<input type="radio" name="question4" value="B"> O próprio Harry Potter colocou o nome no cálice, para provar a Draco Malfoy que sobreviveria.       
+            </div>
+            <div class="questions">
+                <p> - Quais são as relíquias da morte?</p>
+                <label for="">Answers:</label><br>
+                <br>A<input type="radio" name="question5" value="A"> Colar dos colares, capa da invisibilidade e Pedra da ressurreição.
+                <br>B<input type="radio" name="question5" value="B"> Varinha das varinhas, capa da invisibilidade e Pedra da ressurreição.
+            </div>
+            
+            
+            <div class="button">
+                <button>Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <div class="result-wrapper">
+        <div class="result-box">
+            <div class="result-x">x</div>
+            <div class="result-content">
+                Player: <span data-playername=""> </span><br>
+                Score: <span data-playerscore=""> 0</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Breno souza e Silva.
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
